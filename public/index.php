@@ -7,19 +7,15 @@ use app\core\Application;
 
 ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
 
-$app = new Application();
+$app = new Application(dirname(__DIR__));   //create the application and pass project root directory
 
 //Map all the URL's that we have in our application.
 
 // Homepage
-$app->router->get('/', function(){
-    return 'Hello  world';
-});
+$app->router->get('/', 'home');
 
 // Contact
-$app->router->get('/contact', function(){
-    return 'Contact';
-});
+$app->router->get('/contact', 'contact');
 
 
 $app->run();

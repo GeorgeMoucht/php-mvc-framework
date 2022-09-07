@@ -7,12 +7,12 @@
     </div>
     <div class="form-group">
         <label>Email address</label>
-        <input type="email" class="form-control">
+        <input type="email" name="email" class="form-control">
     </div>
 
     <div class="form-group">
         <label>Body</label>
-        <textarea class="form-control"></textarea> 
+        <textarea class="form-control" name="body"></textarea> 
     </div>
     <br>
     <button type="submit" class="btn btn-primary">Submit</button>

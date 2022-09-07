@@ -6,13 +6,15 @@
  * This class is responsible for the routing of the application routes.
  * 
  * @author GeorgeMoucht <georgemoucht@gmail.com>
- * @package app/core;
+ * @package app/controllers;
 */
 
 namespace app\controllers;
+use app\core\Controller;
 use app\core\Application;
+use app\core\Request;
 
-class SiteController
+class SiteController extends Controller
 {
 
     public function home()
@@ -21,16 +23,21 @@ class SiteController
             'name' => "MyName",
         ];
         
-        return Application::$app->router->renderView('home' , $params);
+        return $this->render('home' , $params);
     }
 
     public function contact()
     {
         //render contact form
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
-    public function handleContact()
+
+    //Handle Posted data
+    public function handleContact(Request $request)
     {
+        //Retrive user data
+        $body = $request->getBody();
+
         return 'Handling Submitted data';
     }
 }

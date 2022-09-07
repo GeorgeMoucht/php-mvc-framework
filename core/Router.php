@@ -11,6 +11,7 @@ namespace app\core;
  * @package app/core;
  * @param \app\core\Request $request
  * @param \app\core\Response $response
+ * @param \app\controllers\AuthController
 */
 
 class Router
@@ -55,7 +56,7 @@ class Router
     public function resolve()
     {
         $path = $this->request->getPath();  //Get current path
-        $method = $this->request->getMethod();  //Get current method
+        $method = $this->request->method();  //Get current method
         $callback = $this->routes[$method][$path] ?? false; //build routes array
         
         //If callback doesn't exist return Not found (404 page)
@@ -70,7 +71,16 @@ class Router
         {
             return $this->renderView($callback);
         }
-        return call_user_func($callback);
+        if(is_array($callback)){
+            Application::$app->controller = new $callback[0]();
+            $callback[0] = Application::$app->controller;
+        }
+        // Test the callback:
+            // echo "<pre>";
+            // var_dump($callback);
+            // echo "</pre>";
+            // exit;
+        return call_user_func($callback, $this->request);
     }
 
     public function renderView($view,$params = [])
@@ -83,8 +93,9 @@ class Router
 
     public function layoutContent()
     {
+        $layout = Application::$app->controller->layout;
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout
-        include_once Application::$ROOT_DIR."/views/layouts/main.php";
+        include_once Application::$ROOT_DIR."/views/layouts/$layout.php";
         return ob_get_clean();
 
     }

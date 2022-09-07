@@ -47,7 +47,10 @@ class Router
     {
         $this->routes['get'][$path] = $callback;
     }
-
+    public function post($path , $callback)
+    {
+        $this->routes['post'][$path] = $callback;
+    }
     //resolve for get or for post
     public function resolve()
     {
@@ -59,7 +62,7 @@ class Router
         if($callback === false)
         {
             $this->response->setStatusCode(404);
-            return "Not found";
+            return $this->renderView("_404");
         }
         
         //Execute the callback function.
@@ -70,10 +73,10 @@ class Router
         return call_user_func($callback);
     }
 
-    public function renderView($view)
+    public function renderView($view,$params = [])
     {
         $layoutContent = $this->layoutContent();
-        $viewContent = $this->renderOnlyView($view);
+        $viewContent = $this->renderOnlyView($view,$params);
         return str_replace('{{content}}', $viewContent, $layoutContent);
         // include_once Application::$ROOT_DIR."/views/$view.php";
     }
@@ -86,8 +89,12 @@ class Router
 
     }
 
-    protected function renderOnlyView($view)
+    protected function renderOnlyView($view,$params)
     {
+        foreach ($params as $key => $value) {
+            //if this evaluates as name, this will be evaluated as variable
+            $$key = $value;
+        }
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout
         include_once Application::$ROOT_DIR."/views/$view.php";
         return ob_get_clean();

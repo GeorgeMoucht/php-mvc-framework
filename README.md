@@ -1,6 +1,6 @@
 # php-mvc-framework
 
-##Run enviroment
+## Run enviroment
 Navigate with your cmd inside public directory and execute the following command:
 
     $ composer install

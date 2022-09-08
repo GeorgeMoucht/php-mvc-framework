@@ -33,18 +33,18 @@ class Request
     }
 
 
-    public function method()
+    public function method()    // Returns the requested method from the currnet request [POST/GET]
     {
         return strtolower($_SERVER['REQUEST_METHOD']);
     }
 
 
-    public function isGet()
+    public function isGet() //Checks if the request is a GET request
     {
     return $this->method() === 'get';
     }
 
-    public function isPost()
+    public function isPost() //Checks if the request is a POST request
     {
     return $this->method() === 'post';
     }

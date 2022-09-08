@@ -39,7 +39,7 @@ class Router
         $this->response = $response;
     }
 
-    //Explain of get:\
+    //Explain of get/post functions:\
         //Get the current path and initialize routes array.
         //The first component of the array is REQUEST_METHOD,
         //And the second is REQUEST_URI variables from global var $_SERVER.
@@ -52,6 +52,7 @@ class Router
     {
         $this->routes['post'][$path] = $callback;
     }
+
     //resolve for get or for post
     public function resolve()
     {
@@ -88,7 +89,6 @@ class Router
         $layoutContent = $this->layoutContent();
         $viewContent = $this->renderOnlyView($view,$params);
         return str_replace('{{content}}', $viewContent, $layoutContent);
-        // include_once Application::$ROOT_DIR."/views/$view.php";
     }
 
     public function layoutContent()

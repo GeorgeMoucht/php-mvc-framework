@@ -13,7 +13,7 @@ namespace app\core;
 
 class Controller
 {
-    public string $layout = 'main';
+    public string $layout = 'main'; //Save the layout to be used.
 
     public function setLayout($layout)
     {

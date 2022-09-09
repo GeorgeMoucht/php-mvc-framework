@@ -94,12 +94,23 @@ abstract class Model
     {
         return [
             self::RULE_REQUIRED => 'This field is required',
-            self::RULE_EMAIL => 'This field must be valid email address or password',
+            self::RULE_EMAIL => 'This field must be valid email address',
             self::RULE_MIN => 'Minimum length of the field must be at {min}',
             self::RULE_MAX => 'Maximum length of the field must be at {max}',
             self::RULE_MATCH => 'This field must be the same as {match}',
 
         ];
+    }
+
+    //Check if this model have any error to echo on the view.
+    public function hasError($attribute)
+    {
+        return $this->errors[$attribute] ?? false;
+    }
+
+    public function getFirstError($attribute)
+    {
+        return $this->errors[$attribute][0] ?? false;
     }
 }
 

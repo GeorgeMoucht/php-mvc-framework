@@ -1,5 +1,10 @@
 <h1>Create your Account</h1>
 
+<?php
+    // echo "<pre>";
+    // var_dump($errors);
+    // echo "</pre>";
+?>
 <form action="" method="post">
     <div class="row">
         <div class="col">

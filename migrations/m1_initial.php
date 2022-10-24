@@ -14,7 +14,7 @@ class m1_initial {
                 firstname VARCHAR(255) NOT NULL,
                 lastname VARCHAR(255) NOT NULL,
                 password VARCHAR(512) NOT NULL,
-                status TINYINT NOT NULL,
+                status TINYINT DEFAULT 0,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             ) ENGINE=InnoDB;";
 

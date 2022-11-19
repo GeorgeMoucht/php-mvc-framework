@@ -12,6 +12,7 @@
 namespace app\core;
 
 
+
 class Application
 {
     public static string $ROOT_DIR;
@@ -19,6 +20,7 @@ class Application
     public Response $response;
     public Database $db;
     public Request $request;
+    public Session $session;
     public Controller $controller;
     public static Application $app;
 
@@ -27,11 +29,11 @@ class Application
         self::$ROOT_DIR = $rootPath;
         self::$app = $this;
         $this->request = new Request();
+        $this->session = new Session();
         $this->response = new Response();
         $this->router = new Router($this->request, $this->response);
         $this->db = new Database($config['db']);
     }
-
 
     public function getController(): \app\core\Controller
     {

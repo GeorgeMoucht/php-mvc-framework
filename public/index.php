@@ -25,7 +25,7 @@ $config = [
 ];
 
 $app = new Application(dirname(__DIR__), $config);   //create the application and pass project root directory
-
+ 
 //Map all the URL's that we have in our application.
 
 // Homepage

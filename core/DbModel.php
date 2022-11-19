@@ -33,6 +33,7 @@ abstract class DbModel extends Model
 
         }
         $statement->execute();
+        return true;
     }
 
     //Atomation for returning a pdo prepare function from the Application.

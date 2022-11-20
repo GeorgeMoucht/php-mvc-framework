@@ -93,6 +93,11 @@ abstract class Model
         return empty($this->errors);
     }
 
+    public function labels(): array 
+    {
+        return [];
+    }
+
     //Add the error in the errors array.
     //Params need to pass the error parameters
     public function addError(string $attribute , string $rule , $params = [])

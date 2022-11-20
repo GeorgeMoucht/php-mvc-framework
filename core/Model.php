@@ -40,6 +40,17 @@ abstract class Model
     //Array that storing all errors from data rules child method.
     public array $errors = [];
 
+    public function labels(): array 
+    {
+        return [];
+    }
+
+    public function getLabel($attribute)
+    {
+        return $this->labels()[$attribute] ?? $attribute;
+    }
+
+
     //Validate function loop throw all rules of child class and check if all data validate the rules.
     public function validate()
     {
@@ -70,6 +81,7 @@ abstract class Model
                 }
                 //Check match rule on value
                 if($ruleName === self::RULE_MATCH && $value !== $this->{$rule['match']}) {
+                    $rule['match'] = $this->getLabel($rule['match']);
                     $this->addError($attribute, self::RULE_MATCH, $rule);
                 }
 
@@ -84,18 +96,13 @@ abstract class Model
                     $record = $statement->fetchObject();
                     if($record) //means we have an unique error.
                     {
-                        $this->addError($attribute , self::RULE_UNIQUE, ['field' => $attribute]);
+                        $this->addError($attribute , self::RULE_UNIQUE, ['field' => $this->getLabel($attribute)]);
                     }
                 }
             }
         }
 
         return empty($this->errors);
-    }
-
-    public function labels(): array 
-    {
-        return [];
     }
 
     //Add the error in the errors array.

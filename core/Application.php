@@ -46,6 +46,10 @@ class Application
             
             $this->user = $this->userClass::findOne([$primaryKey => $primaryValue]);    
         }
+        else
+        {
+            $this->user = null;
+        }
     }
 
     public function getController(): \app\core\Controller

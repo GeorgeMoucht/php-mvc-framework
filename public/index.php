@@ -17,6 +17,7 @@ $dotenv->load();
 ini_set('display_errors', 1); error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);;
 
 $config = [
+    'userClass' => \app\models\User::class,
     'db' => [ // Values dsn/user/password comming from the .env file using vlucas/phpdotenv package.
         'dsn' => $_ENV['DB_DSN'],
         'user' => $_ENV['DB_USER'],

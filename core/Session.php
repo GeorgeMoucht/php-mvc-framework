@@ -31,6 +31,7 @@ class Session
 
     }
 
+    //Set flash message to be removed on destruction of Session object
     public function setFlash($key,$message)
     {
         //Example:
@@ -45,6 +46,24 @@ class Session
     public function getFlash($key)
     {
         return $_SESSION[self::FLASH_KEY][$key]['value'] ?? false;
+    }
+
+    //Set a value on $_SESSION array.
+    public function set($key , $value)
+    {
+        $_SESSION[$key] = $value;
+    }
+
+    //Get the value from $_SESSION array. If doesn't exists return false.
+    public function get($key)
+    {
+        return $_SESSION[$key] ?? false;
+    }
+
+    //Remove a value from $_SESSION array.
+    public function remove($key)
+    {
+        unset($_SESSION[$key]);
     }
 
     public function __destruct()

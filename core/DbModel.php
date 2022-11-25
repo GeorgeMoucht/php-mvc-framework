@@ -4,10 +4,12 @@ namespace app\core;
 
 abstract class DbModel extends Model
 {
-    abstract public function tableName(): string;
+    abstract public static function tableName(): string;
 
     abstract public function attributes(): array;
     
+    abstract public static function primaryKey(): string;
+
     // Retrive any model attributes and save them in the database
     public function save()
     {
@@ -34,6 +36,22 @@ abstract class DbModel extends Model
         }
         $statement->execute();
         return true;
+    }
+
+    public static function findOne($whereToFind)  
+    {
+        //$whereToFind will be an associative array with data that user gave us to find into database
+        $tableName = static::tableName();
+        $attributes = array_keys($whereToFind);
+        $sql = implode("AND" , array_map(fn($attr) => "$attr = :$attr", $attributes));
+        $statement = self::prepare("SELECT * FROM users WHERE $sql");
+        foreach($whereToFind as $key => $item)
+        {
+            $statement->bindValue(":$key", $item);
+        }
+
+        $statement->execute();
+        return $statement->fetchObject(static::class);
     }
 
     //Atomation for returning a pdo prepare function from the Application.

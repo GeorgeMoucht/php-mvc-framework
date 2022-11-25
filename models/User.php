@@ -26,11 +26,16 @@ class User extends DbModel
     public string $password = '';
     public string $confirmPassword = '';
 
-    public function tableName(): string
+    public static function tableName(): string
     {
         return 'users';
         //Explain:
             //By returning "users" string, we are mapping this User class for the users table in our database.
+    }
+
+    public static function primaryKey(): string
+    {
+        return 'id';
     }
 
     public function attributes(): array

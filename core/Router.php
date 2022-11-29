@@ -13,6 +13,7 @@ namespace app\core;
  * @param \app\core\Response $response
  * @param \app\controllers\AuthController
 */
+define('CSSPATH' , dirname(__DIR__). '/style/');
 
 class Router
 {
@@ -88,12 +89,18 @@ class Router
     {
         $layoutContent = $this->layoutContent();
         $viewContent = $this->renderOnlyView($view,$params);
-        return str_replace('{{content}}', $viewContent, $layoutContent);
+        $test = str_replace('{{content}}', $viewContent, $layoutContent);
+        $layoutCss = '<link rel="stylesheet" href="<?php echo (CSSPATH . "$view");?>" type="text/css"';
+        $final = str_replace('{{css}}', $layoutCss , $test);
+        return $final;
     }
 
     public function layoutContent()
     {
+        //TODO:
+            //Render layout css file.
         $layout = Application::$app->controller->layout;
+        // include dirname(__DIR__). '/views/style/main.css';
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout
         include_once Application::$ROOT_DIR."/views/layouts/$layout.php";
         return ob_get_clean();
@@ -102,6 +109,8 @@ class Router
 
     protected function renderOnlyView($view,$params)
     {
+        //TODO:
+            // render view css file.
         foreach ($params as $key => $value) {
             //if this evaluates as name, this will be evaluated as variable
             $$key = $value;

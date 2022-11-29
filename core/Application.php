@@ -85,6 +85,11 @@ class Application
         echo $this->router->resolve();
     }
 
+    public static function isGuest()
+    {
+        //Returns true if the user is a guest
+        return !self::$app->user;
+    }
 }
 
 

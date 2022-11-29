@@ -8,6 +8,7 @@ abstract class DbModel extends Model
 
     abstract public function attributes(): array;
     
+    //Return primary key of the user.
     abstract public static function primaryKey(): string;
 
     // Retrive any model attributes and save them in the database

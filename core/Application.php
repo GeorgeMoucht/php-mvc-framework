@@ -40,15 +40,16 @@ class Application
 
         $primaryValue = $this->session->get('user');
 
+        //fetch user when navigating between pages.
         if ($primaryValue) 
         {
-            $primaryKey = $this->userClass::primaryKey();
+            $primaryKey = $this->userClass::primaryKey();   //get primary key of user.
             
-            $this->user = $this->userClass::findOne([$primaryKey => $primaryValue]);    
+            $this->user = $this->userClass::findOne([$primaryKey => $primaryValue]);  //fetch user.  
         }
         else
         {
-            $this->user = null;
+            $this->user = null; //set user to nuill means user is not logged in yet.
         }
     }
 

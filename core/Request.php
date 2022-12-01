@@ -41,12 +41,12 @@ class Request
 
     public function isGet() //Checks if the request is a GET request
     {
-    return $this->method() === 'get';
+        return $this->method() === 'get';
     }
 
     public function isPost() //Checks if the request is a POST request
     {
-    return $this->method() === 'post';
+        return $this->method() === 'post';
     }
 
     public function getBody()

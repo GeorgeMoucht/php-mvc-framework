@@ -87,24 +87,29 @@ class Router
 
     public function renderView($view,$params = [])
     {
-        $layoutContent = $this->layoutContent();
+        $layoutContent = $this->layoutContent($view);
         $viewContent = $this->renderOnlyView($view,$params);
-        $test = str_replace('{{content}}', $viewContent, $layoutContent);
-        $layoutCss = '<link rel="stylesheet" href="<?php echo (CSSPATH . "$view");?>" type="text/css"';
-        $final = str_replace('{{css}}', $layoutCss , $test);
-        return $final;
+        return str_replace('{{content}}', $viewContent , $layoutContent);
     }
 
-    public function layoutContent()
+    public function layoutContent($view)
     {
         //TODO:
             //Render layout css file.
         $layout = Application::$app->controller->layout;
-        // include dirname(__DIR__). '/views/style/main.css';
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout
+        include_once Application::$ROOT_DIR."/views/layouts/begin.php";
+        echo $this->loadStyles($view);
         include_once Application::$ROOT_DIR."/views/layouts/$layout.php";
         return ob_get_clean();
 
+    }
+
+    protected function loadStyles($viewName)
+    {
+        $cssFileName = $viewName.'.css';
+        $pathToFile = '/assets/css/'.$cssFileName;
+        return '<link rel="stylesheet" href="'.$pathToFile.'">';
     }
 
     protected function renderOnlyView($view,$params)

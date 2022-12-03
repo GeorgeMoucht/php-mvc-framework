@@ -98,18 +98,9 @@ class Router
             //Render layout css file.
         $layout = Application::$app->controller->layout;
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout
-        include_once Application::$ROOT_DIR."/views/layouts/begin.php";
-        echo $this->loadStyles($view);
         include_once Application::$ROOT_DIR."/views/layouts/$layout.php";
         return ob_get_clean();
 
-    }
-
-    protected function loadStyles($viewName)
-    {
-        $cssFileName = $viewName.'.css';
-        $pathToFile = '/assets/css/'.$cssFileName;
-        return '<link rel="stylesheet" href="'.$pathToFile.'">';
     }
 
     protected function renderOnlyView($view,$params)

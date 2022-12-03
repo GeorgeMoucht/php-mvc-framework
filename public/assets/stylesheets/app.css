@@ -1,3 +1,40 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.global-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  padding-top: 2rem;
+}
+.global-wrapper .flx-wrapper {
+  width: 100%;
+  height: 170vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+.global-wrapper .main {
+  width: 75%;
+  height: 170vh;
+  background-color: orange;
+}
+
+.sidebar {
+  width: 80px;
+  height: 50px;
+  border-radius: 0px 12px 12px 0px;
+  background-color: red;
+  position: absolute;
+}
+
 .box {
   width: 100px;
   height: 100px;

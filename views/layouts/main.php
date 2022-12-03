@@ -21,6 +21,33 @@
 
   <body>
 
+
+
+    <!-- Contain all the layouts -->
+    <div class="global-wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+        
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="flx-wrapper">
+
+            <!-- Holds the main div that every layout is inside -->
+            <div class="main">
+
+            </div> 
+            <!-- End Main -->
+
+        </div>
+        <!-- End flx-cnt -->
+
+    </div> 
+    <!-- End global-wrapper -->
+
+
+
+<!-- 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,9 +77,9 @@
                 <?php endif; ?>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
-    <div class="container">
+    <!-- <div class="container" style="background: black;">
         <?php if(Application::$app->session->getFlash('success')): ?>
         <div class="alert alert-success">
             <?php echo  Application::$app->session->getFlash('success'); ?>
@@ -60,7 +87,7 @@
         <?php endif; ?>
         {{content}}
     </div>
-        
+         -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>

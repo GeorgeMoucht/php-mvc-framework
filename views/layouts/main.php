@@ -21,15 +21,25 @@
 
   <body>
 
-
-
     <!-- Contain all the layouts -->
     <div class="global-wrapper">
         <!-- Sidebar -->
-        <div class="sidebar">
-        
+        <div class="sidebar-wrapper" id="sidebarBurgerBlock">
+            <div class="flx-wrapper" id="sidebarBurgerButton">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            
+            <!-- Menu-wrapper -->
+            <div class="menu-wrapper" id="sidebarBlock">
+
+            </div>
+            <!-- End Menu-wrapper -->
+
+
         </div>
-        <!-- End Sidebar -->
+        <!-- End Sidebar-wrapper -->
 
         <div class="flx-wrapper">
 
@@ -90,5 +100,6 @@
          -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+    <script src="/assets/js/main.js"></script>
+    </body>
 </html>

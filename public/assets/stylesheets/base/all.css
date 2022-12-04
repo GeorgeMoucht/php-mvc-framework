@@ -15,9 +15,11 @@
 }
 .global-wrapper .flx-wrapper {
   width: 100%;
-  height: 170vh;
   display: flex;
+  display: -webkit-flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .global-wrapper .main {
   width: 75%;

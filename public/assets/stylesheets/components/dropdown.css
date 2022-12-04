@@ -1,0 +1,56 @@
+.moveSidebar {
+  -webkit-animation-name: sidebarSlide;
+          animation-name: sidebarSlide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sidebarSlide {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes sidebarSlide {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.closeSidebar {
+  -webkit-animation-name: closeSidebar;
+          animation-name: closeSidebar;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes closeSidebar {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+@keyframes closeSidebar {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}/*# sourceMappingURL=dropdown.css.map */

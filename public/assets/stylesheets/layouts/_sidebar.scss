@@ -1,8 +1,46 @@
-.sidebar
+@import "../abstracts/mixins";
+
+.sidebar-wrapper
 {
     width: 80px;
-    height: 50px;
-    border-radius: 0px 12px 12px 0px;
-    background-color: red;
     position:absolute;
+    @include flexbox;
+    
+    .flx-wrapper
+    {
+        width: 100px;
+        cursor: pointer;
+        // margin-top: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 0px 12px 12px 0px;
+        background-color: red;
+        position: fixed;
+        top: 0;
+        // left: 300px;
+    }
+
+    .burger-line
+    {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: .1rem;
+        border-radius: 12px;
+    }
+
+    .menu-wrapper
+    {
+        width: 300px;
+        height: 100vh;
+        background-color: yellow;
+        position: fixed;
+        bottom: 2.15rem;
+        top: 0px;
+        left: -300px;
+        // left:00px;
+
+    }
 }
+
+

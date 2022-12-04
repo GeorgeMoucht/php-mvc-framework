@@ -1,1 +1,86 @@
-/*# sourceMappingURL=all.css.map */
+.moveBurgerButton {
+  left: 300px;
+  -webkit-animation-name: burgerSmoothAnimationOpen;
+          animation-name: burgerSmoothAnimationOpen;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes burgerSmoothAnimationOpen {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+@keyframes burgerSmoothAnimationOpen {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+.closeBurgerButton {
+  left: 0px;
+  -webkit-animation-name: burgerSmoothAnimationClose;
+          animation-name: burgerSmoothAnimationClose;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes burgerSmoothAnimationClose {
+  from {
+    left: 300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes burgerSmoothAnimationClose {
+  from {
+    left: 300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.moveSidebar {
+  -webkit-animation-name: sidebarSlide;
+          animation-name: sidebarSlide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sidebarSlide {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes sidebarSlide {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}/*# sourceMappingURL=all.css.map */

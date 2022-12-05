@@ -44,7 +44,7 @@
         <div class="flx-wrapper">
             <!-- Holds the main div that every layout is inside -->
             <div class="main">
-
+                {{content}}
             </div> 
             <!-- End Main -->
 

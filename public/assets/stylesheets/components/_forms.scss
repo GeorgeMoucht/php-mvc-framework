@@ -1,0 +1,89 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.form-wrapper
+{
+    width: $maxWidth;
+    height: $maxScreenVh;
+    @include flexbox;
+    // background: black;
+
+
+
+    .form-cnt
+    {
+        // width: 40%;
+        height: 500px;
+        background: #C1C099;
+        // padding: 10rem;
+        width:  70%;
+        // padding-top: 1.5rem;
+        border-radius: 16px;
+        // padding-left: 0px;
+        @include flexbox(center,center,column);
+
+        form
+        {
+            @include flexbox(center,center,column);
+            height: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            
+            .field-group
+            {
+                label
+                {
+                    width: 100%;
+                    text-align: center;
+                }
+            
+                .form-input
+                {
+
+                }
+            }
+
+        }
+    }
+    
+    .field-group
+    {
+        input[type=text] , input[type=password]
+        {
+            width: 100%;
+            padding: 12px 20px;
+            // margin: 8px 0;
+            // display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            // outline: none;
+
+// TODO
+
+            // &:focus
+            // {
+            //     border-color: 3px solid black;
+            // }
+            // &:active
+            // {
+            //     border-color: 3px solid black;
+            // }
+        }
+    }
+
+}
+
+
+// From 320px and BELOW
+@media screen and (max-width: 320px) {
+    .form-wrapper .form-cnt {
+
+        height: 350px;
+        // padding-left: 1rem;
+        // padding-right: 4rem;
+    }
+}
+

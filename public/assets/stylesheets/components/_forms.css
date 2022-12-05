@@ -1,0 +1,13 @@
+.form-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-wrapper .form-cnt {
+  height: 300px;
+  background: #C1C099;
+}/*# sourceMappingURL=_forms.css.map */

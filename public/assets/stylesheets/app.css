@@ -38,6 +38,60 @@
   transition: left linear 0.2s;
 }
 
+.form-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-wrapper .form-cnt {
+  height: 500px;
+  background: #C1C099;
+  width: 70%;
+  border-radius: 16px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-wrapper .form-cnt form {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.form-wrapper .form-cnt form .field-group label {
+  width: 100%;
+  text-align: center;
+}
+.form-wrapper .field-group input[type=text], .form-wrapper .field-group input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.form-wrapper .field-group input[type=text]:focus, .form-wrapper .field-group input[type=password]:focus {
+  border-color: 3px solid black;
+}
+.form-wrapper .field-group input[type=text]:active, .form-wrapper .field-group input[type=password]:active {
+  border-color: 3px solid black;
+}
+
+@media screen and (max-width: 320px) {
+  .form-wrapper .form-cnt {
+    height: 350px;
+  }
+}
 .toggle-menu {
   width: 70px;
   height: 30px;

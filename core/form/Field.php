@@ -32,10 +32,10 @@ class Field
     public function __toString()
     {
         return sprintf('
-            <div class="form-group">
+            <div class="field-group">
                 <label>%s</label>
-                <input type="%s" name="%s" value="%s" class="form-control %s">
-                <div class="invalid-feedback">
+                <input type="%s" name="%s" value="%s" class="form-input %s">
+                <div class="invalid-message">
                     %s
                 </div>
             </div>

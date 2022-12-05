@@ -1,92 +1,92 @@
-.toggle-menu 
-{
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 2rem;
-  left: 10px;
-  float: left;
-  z-index: 1000;
-
-  i 
-  {
-    position: fixed;
+.toggle-menu {
+    width: 70px;
+    height: 30px;
     display: block;
-    background-color: white;
+    position: fixed;
+    top: 3rem;
+    z-index: 1000;
+    background-color: #293208; //Debug
     border-radius: 16px;
-    width: 30px;
-    margin-top: 2rem;
-    left: 20px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    margin-left: 1rem;
 
-    &:nth-child(1)
-    {
-      top: 16px;
+    i   {
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: #C1C099;
+        width: 30px;
+        left: 20px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+
+
     }
 
-    &:nth-child(2)
-    {
-      top: 24px;
+    i:nth-child(1)  {
+        top: 6px;
     }
 
-    &:nth-child(3)
-    {
-      top: 32px;
+    i:nth-child(2) {
+        top: 14px;
     }
-  }
 
-  &.active
-  {
-   
-    i
-    {
-      &:nth-child(1)
-      {
-        top: 25px;
+    i:nth-child(3) {
+        top: 22px;
+    }
+
+    
+    .toggle-menu.active i:nth-child(1) {
+        top: 15px;
         -webkit-transform: rotateZ(45deg);
         transform: rotateZ(45deg);
-      }
+    }
 
-      &:nth-child(2)
-      {
+    .toggle-menu.active i:nth-child(2) {
         background: transparent;
-      }
+    }
 
-      &:nth-child(3)
-      {
-        top: 25px;
+    .toggle-menu.active i:nth-child(3) {
+        top: 15px;
         -webkit-transform: rotateZ(-45deg);
         transform: rotateZ(-45deg);
-      }
     }
-  }
+}
+
+.burger-cnt {
+    position: relative;
+    // overflow: hidden;
 }
 
 .menu-drawer {
-  width: 400px;
-  background-color: #ccc;
-  height: 100vh;
-  position: fixed;
-  left: -550px;
-  top: 0;
-  transition: left linear .2s;
-  padding: 50px;
+    width: 400px;
+    background-color: #171c04;
+    height: 100vh;
+    position: fixed;
+    left: -500px;
+    top: 0;
+    transition: left linear .2s;
+    padding: 50px;
 
-  li
-  {
-    font-family: lato;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 50px;
-    text-align: center;
+    li {
+        font-family: lato;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 50px;
+        text-align: center;
 
-    a {
-      text-decoration: none;
-      color: #555;
-      &:hover {
-        color: #0094FC;
-      }
+
+        a {
+            text-decoration: none;
+            color: #555;
+
+            &:hover {
+                color: #0094FC;
+            }
+        }
     }
-  }
+}
+
+.open {
+    left: 0px;
+    transition: left linear .2s;
 }

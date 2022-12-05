@@ -22,129 +22,16 @@
 .global-wrapper .main {
   width: 75%;
   height: 170vh;
-  background-color: orange;
-  padding-top: 2rem;
+  background-color: #C1C099;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.12), 0px 6px 10px 3px rgba(0, 0, 0, 0.22), 0px 9px 14px 3px rgba(0, 0, 0, 0.2), 0px 18px 16px 6px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
 }
 
-.moveBurgerButton {
-  left: 300px;
-  -webkit-animation-name: burgerSmoothAnimationOpen;
-          animation-name: burgerSmoothAnimationOpen;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes burgerSmoothAnimationOpen {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
-}
-
-@keyframes burgerSmoothAnimationOpen {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
-}
-.closeBurgerButton {
-  left: 0px;
-  -webkit-animation-name: burgerSmoothAnimationClose;
-          animation-name: burgerSmoothAnimationClose;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes burgerSmoothAnimationClose {
-  from {
-    left: 300px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes burgerSmoothAnimationClose {
-  from {
-    left: 300px;
-  }
-  to {
-    left: 0px;
-  }
-}
-.toggle-menu {
-  width: 50px;
-  height: 50px;
+.burger-cnt {
   position: relative;
-  top: 2rem;
-  left: 10px;
-  float: left;
-  z-index: 1000;
-}
-
-.toggle-menu i {
-  position: fixed;
-  display: block;
-  height: 3px;
-  background: white;
-  border-radius: 16px;
-  width: 30px;
-  margin-top: 2rem;
-  left: 20px;
-  transition: all 0.3s;
-}
-
-.toggle-menu i:nth-child(1) {
-  top: 16px;
-}
-
-.toggle-menu i:nth-child(2) {
-  top: 24px;
-}
-
-.toggle-menu i:nth-child(3) {
-  top: 32px;
-}
-
-.toggle-menu.active i:nth-child(1) {
-  top: 25px;
-  transform: rotateZ(45deg);
-}
-
-.toggle-menu.active i:nth-child(2) {
-  background: transparent;
-}
-
-.toggle-menu.active i:nth-child(3) {
-  top: 25px;
-  transform: rotateZ(-45deg);
-}
-
-.cnt {
-  position: relative;
-}
-
-.menu-drawer {
-  width: 400px;
-  background-color: #ccc;
-  height: 100vh;
-  position: fixed;
-  left: -550px;
-  top: 0;
-  transition: left linear 0.2s;
-  padding: 50px;
 }
 
 .open {
@@ -152,6 +39,61 @@
   transition: left linear 0.2s;
 }
 
+.toggle-menu {
+  width: 70px;
+  height: 30px;
+  display: block;
+  position: fixed;
+  top: 3rem;
+  z-index: 1000;
+  background-color: #293208;
+  border-radius: 16px;
+  margin-left: 1rem;
+}
+.toggle-menu i {
+  position: absolute;
+  display: block;
+  height: 2px;
+  background: #C1C099;
+  width: 30px;
+  left: 20px;
+  transition: all 0.3s;
+}
+.toggle-menu i:nth-child(1) {
+  top: 6px;
+}
+.toggle-menu i:nth-child(2) {
+  top: 14px;
+}
+.toggle-menu i:nth-child(3) {
+  top: 22px;
+}
+.toggle-menu .toggle-menu.active i:nth-child(1) {
+  top: 15px;
+  transform: rotateZ(45deg);
+}
+.toggle-menu .toggle-menu.active i:nth-child(2) {
+  background: transparent;
+}
+.toggle-menu .toggle-menu.active i:nth-child(3) {
+  top: 15px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-cnt {
+  position: relative;
+}
+
+.menu-drawer {
+  width: 400px;
+  background-color: #171c04;
+  height: 100vh;
+  position: fixed;
+  left: -500px;
+  top: 0;
+  transition: left linear 0.2s;
+  padding: 50px;
+}
 .menu-drawer li {
   font-family: lato;
   font-weight: bold;
@@ -167,96 +109,9 @@
   color: #0094FC;
 }
 
-.moveSidebar {
-  -webkit-animation-name: sidebarSlide;
-          animation-name: sidebarSlide;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes sidebarSlide {
-  from {
-    left: -300px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes sidebarSlide {
-  from {
-    left: -300px;
-  }
-  to {
-    left: 0px;
-  }
-}
-.closeSidebar {
-  -webkit-animation-name: closeSidebar;
-          animation-name: closeSidebar;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes closeSidebar {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
-}
-
-@keyframes closeSidebar {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
-}
-.sidebar-wrapper {
-  width: 80px;
-  position: absolute;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.sidebar-wrapper .flx-wrapper {
-  width: 100px;
-  cursor: pointer;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 0px 12px 12px 0px;
-  background-color: red;
-  position: fixed;
-  top: 0;
-}
-.sidebar-wrapper .burger-line {
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  margin: 0.1rem;
-  border-radius: 12px;
-}
-.sidebar-wrapper .menu-wrapper {
-  width: 300px;
-  height: 100vh;
-  background-color: yellow;
-  position: fixed;
-  bottom: 2.15rem;
-  top: 0px;
-  left: -300px;
+.open {
+  left: 0px;
+  transition: left linear 0.2s;
 }
 
 .box {

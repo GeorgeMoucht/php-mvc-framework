@@ -22,6 +22,10 @@
 .global-wrapper .main {
   width: 75%;
   height: 170vh;
-  background-color: orange;
-  padding-top: 2rem;
+  background-color: #C1C099;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.12), 0px 6px 10px 3px rgba(0, 0, 0, 0.22), 0px 9px 14px 3px rgba(0, 0, 0, 0.2), 0px 18px 16px 6px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
 }/*# sourceMappingURL=all.css.map */

@@ -1,46 +1,92 @@
-@import "../abstracts/mixins";
-
-.sidebar-wrapper
+.toggle-menu 
 {
-    width: 80px;
-    position:absolute;
-    @include flexbox;
-    
-    .flx-wrapper
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 2rem;
+  left: 10px;
+  float: left;
+  z-index: 1000;
+
+  i 
+  {
+    position: fixed;
+    display: block;
+    background-color: white;
+    border-radius: 16px;
+    width: 30px;
+    margin-top: 2rem;
+    left: 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+    &:nth-child(1)
     {
-        width: 100px;
-        cursor: pointer;
-        // margin-top: 3rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-radius: 0px 12px 12px 0px;
-        background-color: red;
-        position: fixed;
-        top: 0;
-        // left: 300px;
+      top: 16px;
     }
 
-    .burger-line
+    &:nth-child(2)
     {
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        margin: .1rem;
-        border-radius: 12px;
+      top: 24px;
     }
 
-    .menu-wrapper
+    &:nth-child(3)
     {
-        width: 300px;
-        height: 100vh;
-        background-color: yellow;
-        position: fixed;
-        bottom: 2.15rem;
-        top: 0px;
-        left: -300px;
-        // left:00px;
-
+      top: 32px;
     }
+  }
+
+  &.active
+  {
+   
+    i
+    {
+      &:nth-child(1)
+      {
+        top: 25px;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+      }
+
+      &:nth-child(2)
+      {
+        background: transparent;
+      }
+
+      &:nth-child(3)
+      {
+        top: 25px;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+      }
+    }
+  }
 }
 
+.menu-drawer {
+  width: 400px;
+  background-color: #ccc;
+  height: 100vh;
+  position: fixed;
+  left: -550px;
+  top: 0;
+  transition: left linear .2s;
+  padding: 50px;
 
+  li
+  {
+    font-family: lato;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #555;
+      &:hover {
+        color: #0094FC;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import "../abstracts/mixins";
+@import "../abstracts/variables";
 
 *::after,
 *::before
@@ -8,30 +9,25 @@
 
 .global-wrapper
 {
-    width: 100%;
-    height: 100%;
-    // background-color: orange;
+    width: $maxWidth;
+    height: $maxHeight;
     background: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: $maxWidth $maxHeight;
     background-attachment: fixed;
-    display: flex;
-    padding-top: 2rem;
 
 
     .flx-wrapper
     {
-        width: 100%;
-        // height: 170vh;
-        // background-color: green;
+        width: $maxWidth;
         @include flexbox;
-        // justify-content: center;
     }
 
     .main
     {
-        width: 75%;
+        width: $globalWrapperWidth;
         height: 170vh;
         background-color: orange;
+        padding-top: 2rem;
     }
 }

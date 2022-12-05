@@ -1,34 +1,11 @@
-// Move to left burgerButton on sidebar to open sidebar content
-.moveBurgerButton
-{
-    left: 300px;
-    animation-name: burgerSmoothAnimationOpen;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
 
+// SECOND TRY OF BURGER SIDEBAR
+.burger-cnt {
+  position: relative;
+  // overflow: hidden;
 }
 
-@keyframes burgerSmoothAnimationOpen
-{
-    from {left: 0px;}
-    to {left: 300px;}
+.open {
+  left: 0px;
+  transition: left linear .2s;
 }
-
-// Move to right burgerButton on sidebar to close sidebar content
-
-.closeBurgerButton
-{
-    left: 0px;
-    animation-name: burgerSmoothAnimationClose;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
-
-@keyframes burgerSmoothAnimationClose
-{
-    from {left: 300px;}
-    to {left: 0px;}
-}
-

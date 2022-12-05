@@ -16,33 +16,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Link main css -->
     <link rel="stylesheet" href="/assets/stylesheets/app.css">
-    <!-- <link rel="stylesheet" href="/assets/css/home.css"> -->
 </head>
 
   <body>
 
     <!-- Contain all the layouts -->
     <div class="global-wrapper">
-        <!-- Sidebar -->
-        <div class="sidebar-wrapper" id="sidebarBurgerBlock">
-            <div class="flx-wrapper" id="sidebarBurgerButton">
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
+        <!-- burger-cnt -->
+        <div class="burger-cnt">
+            <a class="toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+            </a>
+            <!-- menu-drawer -->
+            <div class="menu-drawer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
-            
-            <!-- Menu-wrapper -->
-            <div class="menu-wrapper" id="sidebarBlock">
-
-            </div>
-            <!-- End Menu-wrapper -->
-
-
+            <!-- End of menu-drawer -->
         </div>
-        <!-- End Sidebar-wrapper -->
+        <!-- End of burger-cnt -->
 
         <div class="flx-wrapper">
-
             <!-- Holds the main div that every layout is inside -->
             <div class="main">
 

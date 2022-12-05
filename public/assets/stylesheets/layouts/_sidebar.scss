@@ -1,11 +1,13 @@
+@import "../abstracts/variables";
+
 .toggle-menu {
     width: 70px;
     height: 30px;
     display: block;
     position: fixed;
-    top: 3rem;
+    top: $topSpaceOfContent;
     z-index: 1000;
-    background-color: #293208; //Debug
+    background-color: $mainDarkGreen;
     border-radius: 16px;
     margin-left: 1rem;
 
@@ -18,8 +20,6 @@
         left: 20px;
         -webkit-transition: all .3s;
         transition: all .3s;
-
-
     }
 
     i:nth-child(1)  {
@@ -68,8 +68,6 @@
     padding: 50px;
 
     li {
-        font-family: lato;
-        font-weight: bold;
         margin-bottom: 30px;
         font-size: 50px;
         text-align: center;

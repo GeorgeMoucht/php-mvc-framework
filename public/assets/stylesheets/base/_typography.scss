@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+body
+{
+    font-size: $fontSize320;
+}
+
+input[type=text] , 
+input[type=password]
+{
+    font-size: $inputTextSize320;
+}

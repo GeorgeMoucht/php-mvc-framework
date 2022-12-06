@@ -147,6 +147,13 @@ abstract class Model
     {
         return $this->errors[$attribute][0] ?? false;
     }
+
+
+    public function textPlaceHolder($attribute)
+    {
+        $baseString = 'Enter your';
+        return $baseString.' '.$attribute;
+    }
 }
 
 

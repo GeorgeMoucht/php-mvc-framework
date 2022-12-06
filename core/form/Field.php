@@ -33,15 +33,14 @@ class Field
     {
         return sprintf('
             <div class="field-group">
-                <label>%s</label>
-                <input type="%s" name="%s" value="%s" class="form-input %s">
+                <input type="%s" placeholder="%s"  name="%s" value="%s" class="form-input %s">
                 <div class="invalid-message">
                     %s
                 </div>
             </div>
         ', 
-            $this->model->getLabel($this->attribute),
             $this->type,
+            $this->model->textPlaceHolder($this->attribute),
             $this->attribute,
             $this->model->{$this->attribute},
             $this->model->hasError($this->attribute) ? 'is-invalid' : '',

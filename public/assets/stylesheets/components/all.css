@@ -123,4 +123,38 @@
     width: 30%;
     margin-top: 9rem;
   }
+}
+.top-nav-list {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  width: 70%;
+  margin-bottom: 0;
+}
+.top-nav-list li {
+  display: inline;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #ECECE7;
+}
+.top-nav-list li img, .top-nav-list li svg {
+  vertical-align: baseline;
+}
+.top-nav-list li:hover {
+  background-color: rgba(236, 236, 231, 0.6039215686);
+  color: #293208;
+}
+
+.top-nav-profile-list {
+  width: 30%;
+  direction: rtl;
+}
+.top-nav-profile-list .prof-img-cnt {
+  margin-right: 0.2rem;
+  position: relative;
+  bottom: 3px;
+}
+.top-nav-profile-list .prof-img-cnt img {
+  width: 25px;
+  border-radius: 50%;
 }/*# sourceMappingURL=all.css.map */

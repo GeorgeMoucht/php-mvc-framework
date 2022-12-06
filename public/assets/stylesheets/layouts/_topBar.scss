@@ -1,0 +1,17 @@
+.top-navbar-wrapper
+{
+    width: $maxWidth;
+    // height: 3rem;   //Debug
+    // background-color: orange;   //Debug
+
+    .top-nav-list-cnt
+    {
+        background: #293208;
+        // border-radius: 6px;
+        border-radius: 6px 6px 0px 0px;
+        width: 100%;
+        display: flex;
+
+    }
+
+}

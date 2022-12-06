@@ -69,4 +69,14 @@
 .open {
   left: 0px;
   transition: left linear 0.2s;
+}
+
+.top-navbar-wrapper {
+  width: 100%;
+}
+.top-navbar-wrapper .top-nav-list-cnt {
+  background: #293208;
+  border-radius: 6px 6px 0px 0px;
+  width: 100%;
+  display: flex;
 }/*# sourceMappingURL=all.css.map */

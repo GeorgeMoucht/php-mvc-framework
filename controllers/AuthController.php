@@ -66,4 +66,8 @@ class AuthController extends Controller
         return $this->render('home');
     }
 
+    public function profile()
+    {
+        return $this->render('profile');
+    }
 }

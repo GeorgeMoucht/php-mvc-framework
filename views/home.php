@@ -1,3 +1,8 @@
+<?php 
+
+use app\core\Application;
+?>
+
 <div class="top-navbar-wrapper">
     <!-- Menu list -->
     <div class="top-nav-list-cnt">
@@ -31,21 +36,26 @@
 
 
 
+        <?php if(Application::isGuest()): ?>
+            <ul class="top-nav-list top-nav-profile-list">
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <a href="/register">Register</a>
+                </li>
+            </ul>
+        <?php else: ?> 
+            <ul class="top-nav-list top-nav-profile-list">
+                <li>
+                    <a href="/logout">Log out</a>
+                </li>
 
-
-        <ul class="top-nav-list top-nav-profile-list">
-           
-            <li>
-                Log out
-            </li>
-
-            <span class="prof-img-cnt">
-                <img src="/assets/img/avatar1.png" alt="Profile Picture">
-            </span>
-
-
-
-        </ul>
+                <span class="prof-img-cnt">
+                    <img src="/assets/img/avatar1.png" alt="Profile Picture"></a>
+                </span>
+            </ul>
+        <?php endif; ?>
 
 
 
@@ -69,4 +79,11 @@
 <div class="box">main css</div>
 <div class="home-boxx">home css</div>
 
-<h3>Welcome <?php echo $name ?></h3>
+<!-- <h3>Welcome <?php // echo Application::$app->user->getDisplayName(); ?></h3> -->
+<?php 
+// echo '<pre>';
+// echo $name;
+// var_dump($_SESSION);
+// echo '</pre>';
+// exit;
+?>

@@ -1,10 +1,11 @@
 <?php 
     use app\core\Application;
 
-    //Debug user Session:
+    // Debug user Session:
     // echo '<pre>';
     // var_dump(Application::$app->user);
     // echo '</pre>';
+    // exit;
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +45,11 @@
         <div class="flx-wrapper">
             <!-- Holds the main div that every layout is inside -->
             <div class="main">
+                <?php if(Application::$app->session->getFlash('success')): ?>
+                    <div class="alert alert-success">
+                <?php echo  Application::$app->session->getFlash('success'); ?>
+            </div>
+            <?php endif; ?>
                 {{content}}
             </div> 
             <!-- End Main -->

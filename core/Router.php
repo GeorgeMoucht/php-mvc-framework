@@ -96,7 +96,12 @@ class Router
     {
         //TODO:
             //Render layout css file.
-        $layout = Application::$app->controller->layout;
+        $layout = Application::$app->layout;
+        if(Application::$app->controller)
+        {
+            //if controller is null, declared as 'main' from Application 
+            $layout = Application::$app->controller->layout;
+        }
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout
         include_once Application::$ROOT_DIR."/views/layouts/$layout.php";
         return ob_get_clean();

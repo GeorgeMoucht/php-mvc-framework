@@ -23,7 +23,8 @@ class Application
     public Database $db;
     public Request $request;
     public Session $session;
-    public Controller $controller;
+    public ?Controller $controller = null;
+    public string $layout = 'main';
     public static Application $app;
     public ?DbModel  $user; //with "?", we declare the variable only if exists.
 

@@ -7,11 +7,16 @@
     box-sizing: border-box;
 }
 
+body
+{
+    color: #fff;
+}
+
 .global-wrapper
 {
     width: $maxWidth;
     height: $maxHeight;
-    background: url('../img/background.jpg');
+    background: url('../img/login-background.png');
     background-repeat: no-repeat;
     background-size: $maxWidth $maxHeight;
     background-attachment: fixed;

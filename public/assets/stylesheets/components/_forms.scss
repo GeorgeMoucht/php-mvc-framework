@@ -5,204 +5,29 @@
 {
     width: $maxWidth;
     height: $maxScreenVh;
-    @include flexbox;
-    // background: black;
-
-
-
-    .form-cnt
-    {
-        // width: 40%;
-        height: 500px;
-        background: #C1C099;
-        // padding: 10rem;
-        width:  80%;
-        // padding-top: 1.5rem;
-        border-radius: 16px;
-        // padding-left: 0px;
-        @include flexbox(center,center,column);
-
-        form
-        {
-            width: 100%;
-            @include flexbox(center,normal,column);
-            height: 100%;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin-top: 3rem;
-            
-            .field-group
-            {
-                label
-                {
-                    width: 100%;
-                    text-align: center;
-                }
-            
-                .form-input
-                {
-
-                }
-            }
-
-            h1
-            {
-                text-decoration: underline;
-            }
-
-        }
-    }
-    
-    .field-group
-    {
-        width: 100%;        
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-
-        input[type=text] , input[type=password]
-        {
-            width: 100%;
-            padding: 5px 20px;
-            // margin: 8px 0;
-            // display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
-            border: 1px solid #ced4da;
-            // outline: none;
-        }
-    }
+    @include flexboxAlignCenterCol;
 
 }
 
-
-// From 320px and BELOW
-@media screen and (min-width: 320px) {
-    .form-wrapper .form-cnt {
-
-        height: 350px;
-        // padding-left: 1rem;
-        // padding-right: 4rem;
-    }
-}
-
-//From 375px and Above
-@media screen and (min-width: 375px) {
-    .form-wrapper
-    {
-        .form-cnt 
-        {
-            height: 500px;
-            width: 90%;
-            // padding-left: 1rem;
-            // padding-right: 4rem;    
-
-            form
-            {
-                width: 100%;
-                margin-top: 9rem;
-            }
-
-        }
-
-    }
-
-}
-
-// From 425 and above
-@media screen and(min-width:425px)
+.field-group
 {
-    .form-wrapper
+    input
     {
-        .form-cnt 
-        {
-            height: 500px;
-            width: 90%;
-            // padding-left: 1rem;
-            // padding-right: 4rem;    
-
-            form
-            {
-                width: 80%;
-                margin-top: 9rem;
-            }
-
-        }
-
+        width: 90%;
     }
 }
 
-
-//From 768 and above
-@media screen and(min-width:768px)
+form
 {
-    .form-wrapper
+    a
     {
-        .form-cnt 
+        color:#934d56;
+        text-decoration: none;
+
+        &:hover
         {
-            height: 500px;
-            width: 90%;
-            // padding-left: 1rem;
-            // padding-right: 4rem;    
-
-            form
-            {
-                width: 60%;
-                margin-top: 9rem;
-            }
-
+            color: #934d56;
+            text-decoration: underline;
         }
-
-    }
-}
-
-
-
-//From 768 and above
-@media screen and(min-width: 971px)
-{
-    .form-wrapper
-    {
-        .form-cnt 
-        {
-            height: 500px;
-            width: 90%;
-            // padding-left: 1rem;
-            // padding-right: 4rem;    
-
-            form
-            {
-                width: 45%;
-                margin-top: 9rem;
-            }
-
-        }
-
-    }
-}
-
-
-//From 1323 and above
-@media screen and(min-width: 1323px)
-{
-    .form-wrapper
-    {
-        .form-cnt 
-        {
-            height: 500px;
-            width: 90%;
-            // padding-left: 1rem;
-            // padding-right: 4rem;    
-
-            form
-            {
-                width: 30%;
-                margin-top: 9rem;
-            }
-
-        }
-
     }
 }

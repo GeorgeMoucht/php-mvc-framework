@@ -8,3 +8,5 @@ Navigate with your cmd inside public directory and execute the following command
     $ composer update
 
     $ php -S localhost:8080
+
+    

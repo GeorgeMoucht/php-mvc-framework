@@ -3,15 +3,13 @@
 }
 
 .login-block {
-  width: 60%;
-  height: 400px;
   background-color: #934d56;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
 }
 .login-block .third-party-login-cnt {
   width: 50%;
+  height: 400px;
   padding: 1rem;
   padding-top: 3rem;
 }
@@ -19,6 +17,9 @@
   width: 40%;
   height: 2px;
   background-color: #fff;
+}
+.login-block .third-party-login-cnt h2, .login-block .third-party-login-cnt h3 {
+  color: #fff;
 }
 .login-block .login-form-cnt {
   width: 50%;

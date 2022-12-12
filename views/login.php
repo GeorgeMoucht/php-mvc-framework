@@ -9,7 +9,7 @@
         <img src="/assets/img/example-logo.png">
     </div>
     <div class="flx-wrapper">
-        <div class="login-block">
+        <div class="login-block block">
             <div class="third-party-login-cnt">
                 <h2>NAME OF THE SITE</h2>
                 <div class="underline"></div>
@@ -39,6 +39,35 @@
                     <a href="">Forgotten your username or password?<a>
                 <?php  \app\core\form\Form::end(); ?>
             </div>
+        </div>
+
+        <div class="block">
+            <h2>Is this your first time here?</h2>
+            <h3>How do I log in?</h3>
+
+            <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>
+            <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>    <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>    <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>    <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>    <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>    <p>
+                NEW - Login using Google 
+                Now you can use your college email to login into MOVE. You'll simply need to click on the button above that says 'Login with Google'. If you were already logged into your email, you'll be logged directly into MOVE. Otherwise, you'll just need to enter your college email address and your student password.
+            </p>
         </div>
     </div>
 </div>

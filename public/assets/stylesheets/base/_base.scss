@@ -12,14 +12,21 @@ body
     color: #fff;
 }
 
-.global-wrapper
+.background
 {
-    width: $maxWidth;
-    height: $maxHeight;
     background: url('../img/login-background.png');
     background-repeat: no-repeat;
     background-size: $maxWidth $maxHeight;
     background-attachment: fixed;
+    position: fixed;
+    width: $maxWidth;
+    height: $maxHeight;
+    z-index: -1;
+}
+
+.global-wrapper
+{
+
 
 
     .flx-wrapper
@@ -37,4 +44,12 @@ body
         // border-radius: 12px;
         @include globalBoxShadow;
     }
+}
+
+.block
+{
+    border-radius: 10px;
+    width: 60%;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
 }

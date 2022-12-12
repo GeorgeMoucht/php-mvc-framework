@@ -9,7 +9,7 @@
 
 body
 {
-    color: #fff;
+    color: $textBlack;
 }
 
 .background
@@ -52,4 +52,9 @@ body
     width: 60%;
     background-color: #fff;
     margin-bottom: 1.5rem;
+}
+
+.space-inside
+{
+    padding: 2rem;
 }

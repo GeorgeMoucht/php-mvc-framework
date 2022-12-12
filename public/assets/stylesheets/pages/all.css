@@ -24,7 +24,7 @@ h1 {
   flex-direction: row;
 }
 .login-block .third-party-login-cnt {
-  width: 50%;
+  width: 70%;
   height: 400px;
   padding: 1rem;
   padding-top: 3rem;
@@ -62,7 +62,4 @@ h1 {
 
 .field-group {
   display: flex;
-}
-.field-group .icon-cnt {
-  color: black;
 }/*# sourceMappingURL=all.css.map */

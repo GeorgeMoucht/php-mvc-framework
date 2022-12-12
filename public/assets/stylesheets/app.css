@@ -4,7 +4,7 @@
 }
 
 body {
-  color: #fff;
+  color: #212529;
 }
 
 .background {
@@ -42,6 +42,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.space-inside {
+  padding: 2rem;
+}
+
 body {
   font-size: 120%;
 }
@@ -53,6 +57,14 @@ input[type=password] {
 
 h1, h2, h3, h4, h5, h6 {
   color: #455a64;
+}
+
+.icon-cnt {
+  color: black;
+}
+
+.white-text {
+  color: #fff;
 }
 
 .burger-cnt {
@@ -237,7 +249,7 @@ h1 {
   flex-direction: row;
 }
 .login-block .third-party-login-cnt {
-  width: 50%;
+  width: 70%;
   height: 400px;
   padding: 1rem;
   padding-top: 3rem;
@@ -275,7 +287,4 @@ h1 {
 
 .field-group {
   display: flex;
-}
-.field-group .icon-cnt {
-  color: black;
 }/*# sourceMappingURL=app.css.map */

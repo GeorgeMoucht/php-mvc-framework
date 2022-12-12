@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,7 +11,7 @@
 
   </head>
   <body>
-    
+    <div class="background"></div>
     <div class="global-wrapper">
       <div class="flx-wrapper">
         {{content}}

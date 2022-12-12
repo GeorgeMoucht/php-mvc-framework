@@ -19,6 +19,27 @@
     flex-direction: $direction;
 }
 
+@mixin flexboxJustifyCenterCol()
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: columns;
+}
+
+@mixin flexboxAlignCenterCol()
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flexboxAlignCenterRow()
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 @mixin globalBoxShadow()
 {
     box-shadow: 	0px 3px 6px 3px rgba(0,0,0,0.12),

@@ -1,1 +1,49 @@
-/*# sourceMappingURL=login.css.map */
+.login-form {
+  margin-top: 3rem;
+}
+
+.login-block {
+  background-color: #934d56;
+  display: flex;
+  flex-direction: row;
+}
+.login-block .third-party-login-cnt {
+  width: 70%;
+  height: 400px;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+.login-block .third-party-login-cnt .underline {
+  width: 40%;
+  height: 2px;
+  background-color: #fff;
+}
+.login-block .third-party-login-cnt h2, .login-block .third-party-login-cnt h3 {
+  color: #fff;
+}
+.login-block .login-form-cnt {
+  width: 50%;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.login-block .login-form-cnt h4 {
+  color: #934d56;
+}
+
+.form-logo-cnt img {
+  width: 300px;
+}
+
+.icon-cnt {
+  background-color: #d3d3d3;
+  border: 1px solid rgb(87, 87, 87);
+  padding: 0.3rem;
+}
+
+.field-group {
+  display: flex;
+}/*# sourceMappingURL=login.css.map */

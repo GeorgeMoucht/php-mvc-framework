@@ -6,7 +6,7 @@
             // exit;
             // echo '</pre>';
         ?>
-        <img src="../public/assets/img/example-logo.png">
+        <img src="/assets/img/example-logo.png">
     </div>
     <div class="flx-wrapper">
         <div class="login-block">

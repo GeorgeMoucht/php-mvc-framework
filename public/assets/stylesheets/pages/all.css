@@ -49,6 +49,10 @@ h1 {
   color: #934d56;
 }
 
+.form-logo-cnt img {
+  width: 300px;
+}
+
 .icon-cnt {
   background-color: #d3d3d3;
   border: 1px solid rgb(87, 87, 87);

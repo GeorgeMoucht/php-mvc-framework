@@ -7,7 +7,7 @@
     position: fixed;
     top: $topSpaceOfSidebar;
     z-index: 1000;
-    background-color: $mainDarkGreen;
+    background-color: $mainPurple;
     border-radius: 16px;
     margin-left: .5rem;
 
@@ -59,7 +59,7 @@
 
 .menu-drawer {
     width: 400px;
-    background-color: #171c04;
+    background-color: $mainPurpleHover;
     height: 100vh;
     position: fixed;
     left: -500px;

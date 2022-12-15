@@ -39,7 +39,7 @@ body
     {
         width: $globalWrapperWidth;
         height: 170vh;
-        background-color: #C1C099;
+        background-color: $white;
         margin-top: $topSpaceOfContent;
         // border-radius: 12px;
         @include globalBoxShadow;

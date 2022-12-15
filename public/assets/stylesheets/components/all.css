@@ -4,7 +4,8 @@
 
 .open {
   left: 0px;
-  transition: left linear 0.2s;
+  -webkit-transition: left linear .2s;
+  transition: left linear .2s;
 }
 
 .btn-submit {
@@ -18,9 +19,16 @@
 .form-wrapper {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .field-group input {
@@ -31,42 +39,49 @@ form a {
   color: #934d56;
   text-decoration: none;
 }
+
 form a:hover {
   color: #934d56;
   text-decoration: underline;
 }
 
 .top-nav-list {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   padding-left: 1rem;
   width: 70%;
   margin-bottom: 0;
 }
+
 .top-nav-list li {
   display: inline;
-  padding: 0.5rem;
+  padding: .5rem;
   cursor: pointer;
   color: #ECECE7;
 }
+
 .top-nav-list li img, .top-nav-list li svg {
   vertical-align: baseline;
 }
+
 .top-nav-list li:hover {
-  background-color: rgba(236, 236, 231, 0.6039215686);
-  color: #293208;
+  background-color: #a65b64;
+  color: #683c42;
 }
 
 .top-nav-profile-list {
   width: 30%;
   direction: rtl;
 }
+
 .top-nav-profile-list .prof-img-cnt {
-  margin-right: 0.2rem;
+  margin-right: .2rem;
   position: relative;
   bottom: 3px;
 }
+
 .top-nav-profile-list .prof-img-cnt img {
   width: 25px;
   border-radius: 50%;
-}/*# sourceMappingURL=all.css.map */
+}
+/*# sourceMappingURL=all.css.map */

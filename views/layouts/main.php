@@ -21,6 +21,7 @@
 
   <body>
 
+    <div class="background"></div>
     <!-- Contain all the layouts -->
     <div class="global-wrapper">
         <!-- burger-cnt -->

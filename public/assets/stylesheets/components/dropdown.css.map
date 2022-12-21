@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "dropdown.scss"
-    ],
-    "names": [],
-    "file": "dropdown.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"dropdown.css"}

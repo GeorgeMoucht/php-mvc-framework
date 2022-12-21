@@ -1,0 +1,34 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.profile-wrapper
+{
+    width: $maxWidth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .profile-img-cnt
+    {
+        width: 80px;
+        margin-right: 1rem;
+
+        img
+        {
+            width: 100%;
+            border-radius: 50%;
+
+        }
+    }
+
+    .profile-info-cnt
+    {
+        h3
+        {
+            color: black !important;
+        }
+
+    }
+
+}
+

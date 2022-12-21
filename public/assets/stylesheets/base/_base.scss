@@ -54,7 +54,27 @@ body
     margin-bottom: 1.5rem;
 }
 
+.full-width-block
+{
+    width:$maxWidth;
+    padding: 1rem;
+    // border-bottom: 1px solid rgb(67, 67, 67);
+}
+
 .space-inside
 {
     padding: 2rem;
+}
+
+.flex-row
+{
+    width: 100%;
+    @include flexRow;
+}
+
+.line
+{
+    background-color: grey; 
+    width: 95%;
+    height: 1px;
 }

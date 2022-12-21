@@ -1,0 +1,17 @@
+.profile-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-wrapper .profile-img-cnt {
+  width: 80px;
+  margin-right: 1rem;
+}
+.profile-wrapper .profile-img-cnt img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile-wrapper .profile-info-cnt h3 {
+  color: black !important;
+}/*# sourceMappingURL=profile.css.map */

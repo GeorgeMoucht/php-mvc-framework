@@ -3,7 +3,7 @@
 
     // Debug user Session:
     // echo '<pre>';
-    // var_dump(Application::$app->user);
+    // var_dump(Application::$app->user<img src="/assets/img/avatar1.png" alt="Profile Picture">);
     // echo '</pre>';
     // exit;
 ?>

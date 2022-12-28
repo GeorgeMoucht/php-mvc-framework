@@ -58,6 +58,10 @@ form a:hover {
   margin-bottom: 0;
 }
 
+.top-nav-list a {
+  text-decoration: none;
+}
+
 .top-nav-list li {
   display: inline;
   padding: .5rem;

@@ -4,9 +4,9 @@ namespace app\core;
 
 /**
  * Class Router
- * 
+ *
  * This class is responsible for the routing of the application routes.
- * 
+ *
  * @author GeorgeMoucht <georgemoucht@gmail.com>
  * @package app/core;
  * @param \app\core\Request $request
@@ -60,14 +60,14 @@ class Router
         $path = $this->request->getPath();  //Get current path
         $method = $this->request->method();  //Get current method
         $callback = $this->routes[$method][$path] ?? false; //build routes array
-        
+
         //If callback doesn't exist return Not found (404 page)
         if($callback === false)
         {
             $this->response->setStatusCode(404);
             return $this->renderView("_404");
         }
-        
+
         //Execute the callback function.
         if(is_string($callback))
         {
@@ -108,7 +108,7 @@ class Router
         $layout = Application::$app->layout;
         if(Application::$app->controller)
         {
-            //if controller is null, declared as 'main' from Application 
+            //if controller is null, declared as 'main' from Application
             $layout = Application::$app->controller->layout;
         }
         ob_start(); //Start output cashing and we can remove the {{content}} string and replace it with layout

@@ -22,8 +22,83 @@
             </div>
         </div>
     </div>
-    <div class="line">
-        
+
+    <div class="line"></div>
+
+    <div class="flex-row mobile-view">
+        <div class="col mob-view-col">
+            <div class="border-block">
+                <h5>User details</h5>
+                <span class="btn edit-btn">Edit Profile</span>
+
+                <br>
+                <h6>Email address</h6>
+                <span>fasdfds</span>
+
+                <br>
+                <h6>Country</h6>
+                <span>fasdfds</span>
+
+                <br>
+                <h6>City/Town</h6>
+                <span>fasdfds</span>
+
+                <br>
+                <h6>Interests</h6>
+                <span>fasdfds</span>
+            </div>
+
+            <div class="border-block">
+                <h5>Badges</h5>
+                <h6>Badges from all courses</h6>
+                <ul class="badges-block-wrapper">
+                    <!-- Badge block -->
+                    <li class="badge-img-block">
+                        <img src="/assets/img/avatar1.png" alt="">
+                        <div class="badge-name">First Badge</div>
+                    </li>
+
+                    <!-- Badge block -->
+                    <li class="badge-img-block">
+                        <img src="/assets/img/avatar1.png" alt="">
+                        <div class="badge-name">First Badge</div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="border-block">
+                <h5>Course details</h5>
+                <ul>
+                    <li><a href="">First test Course</a></li>
+                    <li><a href="">Second test Course</a></li>
+                    <li><a href="">Third test Course</a></li>
+                    <li><a href="">Forth test Course</a></li>
+                </ul>
+            </div>
+
+            <div class="border-block">
+                <h5>Miscellaneous</h5>
+                <ul>
+                    <li><a href="">My topics</a></li>
+                    <li><a href="">My comments</a></li>
+                </ul>
+            </div>
+
+            <div class="border-block">
+                <h5>Login Activity</h5>
+           
+                <h6>First access to site</h6>
+                <span>Wednesday, 1 September 2014, 1:48 PM (7 years 257 days)</span>
+           
+                <h6>Last access to site</h6>
+                <span>Monday, 14 May 2018, 5:12 PM (now)</span>
+            </div>
+        </div>
+
     </div>
 </div>
 

@@ -54,6 +54,13 @@ body
     margin-bottom: 1.5rem;
 }
 
+.border-block
+{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+}
+
 .full-width-block
 {
     width:$maxWidth;
@@ -75,6 +82,6 @@ body
 .line
 {
     background-color: grey; 
-    width: 95%;
+    width: 97%;
     height: 1px;
 }

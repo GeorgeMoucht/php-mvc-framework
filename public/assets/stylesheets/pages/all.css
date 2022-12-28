@@ -20,32 +20,47 @@ h1 {
 
 .login-block {
   background-color: #934d56;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .login-block .third-party-login-cnt {
   width: 70%;
   height: 400px;
   padding: 1rem;
   padding-top: 3rem;
 }
+
 .login-block .third-party-login-cnt .underline {
   width: 40%;
   height: 2px;
   background-color: #fff;
 }
+
 .login-block .third-party-login-cnt h2, .login-block .third-party-login-cnt h3 {
   color: #fff;
 }
+
 .login-block .login-form-cnt {
   width: 50%;
   padding-top: 2rem;
   padding-left: 1rem;
   background-color: #f8f9fa;
   border-radius: 0px 10px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .login-block .login-form-cnt h4 {
   color: #934d56;
 }
@@ -56,28 +71,94 @@ h1 {
 
 .icon-cnt {
   background-color: #d3d3d3;
-  border: 1px solid rgb(87, 87, 87);
-  padding: 0.3rem;
+  border: 1px solid #575757;
+  padding: .3rem;
 }
 
 .field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .profile-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .profile-wrapper .profile-img-cnt {
   width: 80px;
   margin-right: 1rem;
 }
+
 .profile-wrapper .profile-img-cnt img {
   width: 100%;
   border-radius: 50%;
 }
+
 .profile-wrapper .profile-info-cnt h3 {
   color: black !important;
-}/*# sourceMappingURL=all.css.map */
+}
+
+.profile-wrapper .edit-btn {
+  float: right;
+}
+
+.profile-wrapper .badges-block-wrapper {
+  list-style-type: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: columns;
+          flex-direction: columns;
+  gap: 10px;
+}
+
+.profile-wrapper .badges-block-wrapper li {
+  width: 100px;
+}
+
+.profile-wrapper .badges-block-wrapper li img {
+  width: 100%;
+}
+
+.profile-wrapper .badges-block-wrapper li .badge-name {
+  text-align: center;
+}
+
+.mob-view-col {
+  width: 50%;
+}
+
+@media screen and (max-width: 870px) {
+  .mobile-view {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .border-block {
+    width: 100% !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .mob-view-col {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=all.css.map */

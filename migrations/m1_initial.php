@@ -13,7 +13,11 @@ class m1_initial {
                 email VARCHAR(255) NOT NULL,
                 firstname VARCHAR(255) NOT NULL,
                 lastname VARCHAR(255) NOT NULL,
+                username VARCHAR(255) NOT NULL,
                 password VARCHAR(512) NOT NULL,
+                country VARCHAR(255) NULL DEFAULT '',
+                city VARCHAR(255) NULL DEFAULT '',
+                interests VARCHAR(255) NULL DEFAULT '',
                 status TINYINT DEFAULT 0,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             ) ENGINE=InnoDB;";

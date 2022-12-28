@@ -159,6 +159,30 @@ form a:hover {
   text-decoration: underline;
 }
 
+.form-space {
+  margin: .5rem;
+}
+
+.form-cnt {
+  width: 50%;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0px 10px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-cnt h4 {
+  color: #934d56;
+}
+
 .top-nav-list {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -350,25 +374,6 @@ h1 {
 
 .login-block .third-party-login-cnt h2, .login-block .third-party-login-cnt h3 {
   color: #fff;
-}
-
-.login-block .login-form-cnt {
-  width: 50%;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  background-color: #f8f9fa;
-  border-radius: 0px 10px 10px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.login-block .login-form-cnt h4 {
-  color: #934d56;
 }
 
 .form-logo-cnt img {

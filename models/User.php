@@ -20,6 +20,7 @@ class User extends UserModel
     const STATUS_ACTIVE = 1;
     const STATUS_DELETED = 2;
 
+    public string $username = '';
     public string $firstname = '';
     public string $lastname = '';
     public string $email = '';

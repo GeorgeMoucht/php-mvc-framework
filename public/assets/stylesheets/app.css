@@ -54,8 +54,36 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.border-block {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+.full-width-block {
+  width: 100%;
+  padding: 1rem;
+}
+
 .space-inside {
   padding: 2rem;
+}
+
+.flex-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.line {
+  background-color: grey;
+  width: 97%;
+  height: 1px;
 }
 
 body {
@@ -95,6 +123,11 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #934d56;
   margin-top: 1rem;
   width: 95%;
+}
+
+.btn {
+  background-color: #934d56;
+  padding: .5rem;
 }
 
 .form-wrapper {
@@ -352,5 +385,86 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.profile-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-wrapper .profile-img-cnt {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.profile-wrapper .profile-img-cnt img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile-wrapper .profile-info-cnt h3 {
+  color: black !important;
+}
+
+.profile-wrapper .edit-btn {
+  float: right;
+}
+
+.profile-wrapper .badges-block-wrapper {
+  list-style-type: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: columns;
+          flex-direction: columns;
+  gap: 10px;
+}
+
+.profile-wrapper .badges-block-wrapper li {
+  width: 100px;
+}
+
+.profile-wrapper .badges-block-wrapper li img {
+  width: 100%;
+}
+
+.profile-wrapper .badges-block-wrapper li .badge-name {
+  text-align: center;
+}
+
+.mob-view-col {
+  width: 50%;
+}
+
+@media screen and (max-width: 870px) {
+  .mobile-view {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .border-block {
+    width: 100% !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .mob-view-col {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=app.css.map */

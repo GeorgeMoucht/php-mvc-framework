@@ -16,6 +16,11 @@
   width: 95%;
 }
 
+.btn {
+  background-color: #934d56;
+  padding: .5rem;
+}
+
 .form-wrapper {
   width: 100%;
   height: 100vh;

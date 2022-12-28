@@ -54,8 +54,36 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.border-block {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+.full-width-block {
+  width: 100%;
+  padding: 1rem;
+}
+
 .space-inside {
   padding: 2rem;
+}
+
+.flex-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.line {
+  background-color: grey;
+  width: 97%;
+  height: 1px;
 }
 
 body {

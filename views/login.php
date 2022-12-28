@@ -29,7 +29,7 @@
                 </button>
             </div>
 
-            <div class="login-form-cnt">
+            <div class="form-cnt">
                 <h4>Already have an account?</h4>
                 <?php $form = \app\core\form\Form::begin('', 'post'); ?>
                     <?php echo $form->field($model , 'email') ?>

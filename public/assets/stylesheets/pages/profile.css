@@ -1,56 +1,36 @@
 .profile-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .profile-wrapper .profile-img-cnt {
   width: 80px;
   margin-right: 1rem;
 }
-
 .profile-wrapper .profile-img-cnt img {
   width: 100%;
   border-radius: 50%;
 }
-
 .profile-wrapper .profile-info-cnt h3 {
   color: black !important;
 }
-
 .profile-wrapper .edit-btn {
   float: right;
 }
-
 .profile-wrapper .badges-block-wrapper {
   list-style-type: none;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: columns;
-          flex-direction: columns;
+  flex-direction: columns;
   gap: 10px;
 }
-
 .profile-wrapper .badges-block-wrapper li {
   width: 100px;
 }
-
 .profile-wrapper .badges-block-wrapper li img {
   width: 100%;
 }
-
 .profile-wrapper .badges-block-wrapper li .badge-name {
   text-align: center;
 }
@@ -61,13 +41,8 @@
 
 @media screen and (max-width: 870px) {
   .mobile-view {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
   .border-block {
     width: 100% !important;
@@ -77,5 +52,4 @@
   .mob-view-col {
     width: 95%;
   }
-}
-/*# sourceMappingURL=profile.css.map */
+}/*# sourceMappingURL=profile.css.map */

@@ -4,8 +4,7 @@
 
 .open {
   left: 0px;
-  -webkit-transition: left linear .2s;
-  transition: left linear .2s;
+  transition: left linear 0.2s;
 }
 
 .btn-submit {
@@ -18,22 +17,21 @@
 
 .btn {
   background-color: #934d56;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .form-wrapper {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-block {
+  background-color: #934d56;
+  display: flex;
+  flex-direction: row;
 }
 
 .field-group input {
@@ -44,14 +42,13 @@ form a {
   color: #934d56;
   text-decoration: none;
 }
-
 form a:hover {
   color: #934d56;
   text-decoration: underline;
 }
 
 .form-space {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .form-cnt {
@@ -61,42 +58,63 @@ form a:hover {
   padding-bottom: 2rem;
   background-color: #f8f9fa;
   border-radius: 0px 10px 10px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .form-cnt h4 {
   color: #934d56;
 }
 
+.third-party-cnt {
+  width: 70%;
+  height: 400px;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+.third-party-cnt .underline {
+  width: 40%;
+  height: 2px;
+  background-color: #fff;
+}
+.third-party-cnt p, .third-party-cnt h2, .third-party-cnt h3 {
+  color: #fff;
+}
+
+@media screen and (max-width: 950px) {
+  .form-cnt {
+    width: 100% !important;
+    border-radius: 0px 0px 10px 10px !important;
+  }
+  .google-btn {
+    margin-bottom: 2rem !important;
+  }
+  .form-block {
+    flex-direction: column !important;
+  }
+  .third-party-cnt {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
 .top-nav-list {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   padding-left: 1rem;
   width: 70%;
   margin-bottom: 0;
 }
-
 .top-nav-list a {
   text-decoration: none;
 }
-
 .top-nav-list li {
   display: inline;
-  padding: .5rem;
+  padding: 0.5rem;
   cursor: pointer;
   color: #ECECE7;
 }
-
 .top-nav-list li img, .top-nav-list li svg {
   vertical-align: baseline;
 }
-
 .top-nav-list li:hover {
   background-color: #a65b64;
   color: #683c42;
@@ -106,15 +124,12 @@ form a:hover {
   width: 30%;
   direction: rtl;
 }
-
 .top-nav-profile-list .prof-img-cnt {
-  margin-right: .2rem;
+  margin-right: 0.2rem;
   position: relative;
   bottom: 3px;
 }
-
 .top-nav-profile-list .prof-img-cnt img {
   width: 25px;
   border-radius: 50%;
-}
-/*# sourceMappingURL=all.css.map */
+}/*# sourceMappingURL=all.css.map */

@@ -7,9 +7,8 @@
   z-index: 1000;
   background-color: #934d56;
   border-radius: 16px;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
-
 .toggle-menu i {
   position: absolute;
   display: block;
@@ -17,35 +16,26 @@
   background: #C1C099;
   width: 30px;
   left: 20px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 .toggle-menu i:nth-child(1) {
   top: 6px;
 }
-
 .toggle-menu i:nth-child(2) {
   top: 14px;
 }
-
 .toggle-menu i:nth-child(3) {
   top: 22px;
 }
-
 .toggle-menu .toggle-menu.active i:nth-child(1) {
   top: 15px;
-  -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
-
 .toggle-menu .toggle-menu.active i:nth-child(2) {
   background: transparent;
 }
-
 .toggle-menu .toggle-menu.active i:nth-child(3) {
   top: 15px;
-  -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
 
@@ -60,42 +50,33 @@
   position: fixed;
   left: -500px;
   top: 0;
-  -webkit-transition: left linear .2s;
-  transition: left linear .2s;
+  transition: left linear 0.2s;
   padding: 50px;
 }
-
 .menu-drawer li {
   margin-bottom: 30px;
   font-size: 50px;
   text-align: center;
 }
-
 .menu-drawer li a {
   text-decoration: none;
   color: #555;
 }
-
 .menu-drawer li a:hover {
   color: #0094FC;
 }
 
 .open {
   left: 0px;
-  -webkit-transition: left linear .2s;
-  transition: left linear .2s;
+  transition: left linear 0.2s;
 }
 
 .top-navbar-wrapper {
   width: 100%;
 }
-
 .top-navbar-wrapper .top-nav-list-cnt {
   background: #934d56;
   border-radius: 6px 6px 0px 0px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-/*# sourceMappingURL=all.css.map */
+}/*# sourceMappingURL=all.css.map */

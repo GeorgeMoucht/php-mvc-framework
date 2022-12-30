@@ -1,3 +1,9 @@
+<?php
+// var_dump($_SESSION);
+// exit;
+use app\core\Application;
+
+?>
 <div class="profile-wrapper">
     <div class="full-width-block flex-row">
         <div class="profile-img-cnt">
@@ -5,6 +11,7 @@
         </div>
         <div class="profile-info-cnt">
             <h3>myname</h3>
+            <h3><?php  echo Application::$app->user->getDisplayName(); ?></h3>
             <div class="counter-cnt">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">

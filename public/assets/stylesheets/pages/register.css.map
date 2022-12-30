@@ -1,1 +1,9 @@
-{"version":3,"sources":["register.scss","register.css"],"names":[],"mappings":"AAAA;EAEI;IAEI,8BAAA;ECDN;AACF","file":"register.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAE/B,AAAA,aAAa,CACb;IACI,aAAa,EAAE,eAAe;GACjC",
+    "sources": [
+        "register.scss"
+    ],
+    "names": [],
+    "file": "register.css"
+}

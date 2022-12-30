@@ -1,1 +1,12 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"all.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "all.scss",
+        "_functions.scss",
+        "_mixins.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "all.css"
+}

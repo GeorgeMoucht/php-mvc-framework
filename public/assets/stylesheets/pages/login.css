@@ -8,10 +8,13 @@
 
 .icon-cnt {
   background-color: #d3d3d3;
-  border: 1px solid rgb(87, 87, 87);
-  padding: 0.3rem;
+  border: 1px solid #575757;
+  padding: .3rem;
 }
 
 .field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-}/*# sourceMappingURL=login.css.map */
+}
+/*# sourceMappingURL=login.css.map */

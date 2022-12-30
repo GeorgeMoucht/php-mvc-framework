@@ -1,6 +1,7 @@
 *::after,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -21,17 +22,28 @@ body {
 .global-wrapper .flx-wrapper {
   width: 100%;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .global-wrapper .main {
   width: 75%;
   height: 170vh;
   background-color: #fff;
   margin-top: 4rem;
-  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.12), 0px 6px 10px 3px rgba(0, 0, 0, 0.22), 0px 9px 14px 3px rgba(0, 0, 0, 0.2), 0px 18px 16px 6px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.12), 0px 6px 10px 3px rgba(0, 0, 0, 0.22), 0px 9px 14px 3px rgba(0, 0, 0, 0.2), 0px 18px 16px 6px rgba(0, 0, 0, 0.28);
+          box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.12), 0px 6px 10px 3px rgba(0, 0, 0, 0.22), 0px 9px 14px 3px rgba(0, 0, 0, 0.2), 0px 18px 16px 6px rgba(0, 0, 0, 0.28);
   border-radius: 6px;
 }
 
@@ -59,8 +71,13 @@ body {
 
 .flex-row {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .line {
@@ -88,4 +105,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .white-text {
   color: #fff;
-}/*# sourceMappingURL=all.css.map */
+}
+/*# sourceMappingURL=all.css.map */

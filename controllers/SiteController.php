@@ -40,6 +40,12 @@ class SiteController extends Controller
 
         return 'Handling Submitted data';
     }
+
+    public function profile()
+    {
+        $this->setLayout('notopbar');
+        return $this->render('profile');
+    }
 }
 
 ?>

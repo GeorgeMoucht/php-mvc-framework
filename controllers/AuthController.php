@@ -72,9 +72,5 @@ class AuthController extends Controller
         return $this->render('home');
     }
 
-    public function profile()
-    {
-        $this->setLayout('notopbar');
-        return $this->render('profile');
-    }
+
 }

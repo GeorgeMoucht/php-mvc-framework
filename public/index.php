@@ -49,7 +49,7 @@ $app->router->post('/register', [AuthController::class, 'register']);
 $app->router->get('/logout', [AuthController::class, 'logout']);
 
 //Profile
-$app->router->get('/profile', [AuthController::class, 'profile']);
+$app->router->get('/profile', [SiteController::class, 'profile']);
 
 $app->run();
 

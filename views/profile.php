@@ -10,7 +10,6 @@ use app\core\Application;
             <img src="/assets/img/avatar1.png" alt="Profile Picture" />
         </div>
         <div class="profile-info-cnt">
-            <h3>myname</h3>
             <h3><?php  echo Application::$app->user->getDisplayName(); ?></h3>
             <div class="counter-cnt">
                 <span>
@@ -40,19 +39,19 @@ use app\core\Application;
 
                 <br>
                 <h6>Email address</h6>
-                <span>fasdfds</span>
+                <span><?php  echo Application::$app->user->getDisplayEmail(); ?></span>
 
                 <br>
                 <h6>Country</h6>
-                <span>fasdfds</span>
+                <span><?php  echo Application::$app->user->getDisplayCountry(); ?></span>
 
                 <br>
                 <h6>City/Town</h6>
-                <span>fasdfds</span>
+                <span><?php  echo Application::$app->user->getDisplayCity(); ?></span>
 
                 <br>
                 <h6>Interests</h6>
-                <span>fasdfds</span>
+                <span><?php  echo Application::$app->user->getDisplayInterests(); ?></span>
             </div>
 
             <div class="border-block">

@@ -24,6 +24,9 @@ class User extends UserModel
     public string $firstname = '';
     public string $lastname = '';
     public string $email = '';
+    public string $city = '';
+    public string $country = '';
+    public string $interests = '';
     public int $status = self::STATUS_INACTIVE;
     public string $password = '';
     public string $confirmPassword = '';
@@ -88,6 +91,49 @@ class User extends UserModel
         return $this->firstname.' '.$this->lastname;
     }
 
+    public function getDisplayEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getDisplayCountry(): string
+    {
+        $country = $this->country;
+        if($country == null)
+        {
+            return "--";
+        }
+        else
+        {
+            return $country;
+        }
+    }
+
+    public function getDisplayCity(): string
+    {
+        $city = $this->city;
+        if($city == null)
+        {
+            return "--";
+        }
+        else
+        {
+            return $city;
+        }
+    }
+
+    public function getDisplayInterests(): string
+    {
+        $interests = $this->interests;
+        if($interests == null)
+        {
+            return "--";
+        }
+        else
+        {
+            return $interests;
+        }
+    }
 }
 
 ?>

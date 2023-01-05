@@ -99,7 +99,8 @@ use app\core\Application;
            
                 <h6>First access to site</h6>
                 <span>Wednesday, 1 September 2014, 1:48 PM (7 years 257 days)</span>
-           
+                <span><?php  echo Application::$app->user->getDisplayCreatedDate(); ?></span>
+
                 <h6>Last access to site</h6>
                 <span>Monday, 14 May 2018, 5:12 PM (now)</span>
             </div>

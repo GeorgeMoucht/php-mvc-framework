@@ -4,6 +4,7 @@ namespace app\models;
 // use app\core\Model;
 // use app\core\DbModel;
 use app\core\UserModel;
+use app\helpers\Time;
 
 /**
  * Class RegisterModel
@@ -30,6 +31,8 @@ class User extends UserModel
     public int $status = self::STATUS_INACTIVE;
     public string $password = '';
     public string $confirmPassword = '';
+    public string $created_at = '';
+    public Time $time;
 
     public static function tableName(): string
     {
@@ -133,6 +136,23 @@ class User extends UserModel
         {
             return $interests;
         }
+    }
+
+    public function getDisplayCreatedDate(): string
+    {
+        // var_dump(date("Y/m/d"));
+        // var_dump(gettype($this->created_at));
+        // var_dump($this->created_at);
+        // $date = date('m/d/Y h:i:s a', time());
+        // var_dump($date);
+        $time = new Time;
+        // return $this->created_at;
+        return "hi";
+    }
+
+    public function getCreatedDate(): string
+    {
+        return $this->created_at;
     }
 }
 

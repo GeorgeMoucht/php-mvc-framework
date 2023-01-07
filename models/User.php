@@ -34,6 +34,11 @@ class User extends UserModel
     public string $created_at = '';
     public Time $time;
 
+    public function __construct()
+    {
+        $this->time = new Time($this->created_at);
+    }
+
     public static function tableName(): string
     {
         return 'users';
@@ -138,17 +143,17 @@ class User extends UserModel
         }
     }
 
-    public function getDisplayCreatedDate(): string
-    {
-        // var_dump(date("Y/m/d"));
-        // var_dump(gettype($this->created_at));
-        // var_dump($this->created_at);
-        // $date = date('m/d/Y h:i:s a', time());
-        // var_dump($date);
-        $time = new Time;
-        // return $this->created_at;
-        return "hi";
-    }
+    // public function getDisplayCreatedDate(): string
+    // {
+    //     // var_dump(date("Y/m/d"));
+    //     // var_dump(gettype($this->created_at));
+    //     // var_dump($this->created_at);
+    //     // $date = date('m/d/Y h:i:s a', time());
+    //     // var_dump($date);
+    //     $time = new Time;
+    //     // return $this->created_at;
+    //     return "hi";
+    // }
 
     public function getCreatedDate(): string
     {

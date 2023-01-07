@@ -15,7 +15,9 @@ abstract class UserModel extends DbModel
 
     abstract public function getDisplayInterests(): string;
 
-    abstract public function getDisplayCreatedDate(): string;
+    // abstract public function getDisplayCreatedDate(): string;
+
+    abstract public function getCreatedDate(): string;
 }
 
 ?>

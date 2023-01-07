@@ -12,13 +12,13 @@ use app\core\Application;
 
 class Time
 {
-    public string $date = '';
+    public string $date;
+    // public string $created_at;
 
-    public function __construct()
+    public function __construct($created_at)
     {
-        $date = Application::$app->user->getCreatedDate();
-        var_dump($date);
-        // exit;
+        $this->date = $created_at;
+        // var_dump($this-> date);
     }
 }
 
